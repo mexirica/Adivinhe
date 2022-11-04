@@ -1,0 +1,13 @@
+import random
+def adivinha(x):
+    aleatorio=random.randint(1,x)
+    adivinha=0
+    while adivinha != aleatorio:
+        adivinha=int(input("Chute um número "))
+        if adivinha > aleatorio:
+            print("Tente um número menor ")
+        elif adivinha < aleatorio:
+            print("Tenta um número maior ")
+    print("Parabéns, você acertou o número ")
+
+adivinha(15)
